@@ -1,0 +1,87 @@
+Version 2.xx (developement version)
+------------
+* [ENH-#16] 'Enable notifications (part I) - notify admins'
+
+Version 2.12
+------------
+* Move some HTML code to templates files
+* Solves bug whe apply actions to an user
+* Changes is_int() to is_numeric() on some tests
+* Change DB.class license to GPLv2
+* AltoRouter is not longer included. It was never used.
+* Change DB.class namespace to \Pakus\Core
+* Change Session.class namespace to \Pakus\Core
+* Change Bootstrap.class namespace to \Pakus\Core
+* [BUG] 'On database schema creation, some fields ara used before definition'
+* [BUG] 'No error message is printed when config file is missing'
+* Move \Pakus\Core classes to its own folder
+* Changes at Bootstrap.class to address to new folder classes
+* Improve Session.class security following OWASP best practices
+* [BUG-#13] 'XSS on 'nav' field on login page'
+* Disable autocompletion on password input fields
+
+Version 2.11
+------------
+* [BUG-#10] 'Some DB.class functions returns incorrect values'
+* Adds an image to default level 'Novato'
+* Adds uploads/badges, uploads/profiles and uploads/levels folders
+* Changes on Session class to manage $_SESSION in a better way
+* [ENH-#12] 'Optimize DB schema'
+* [BUG-#11] 'Levels are incorrectly assigned'
+
+Version 2.10
+------------
+* Improve gamify.conf.sample documentation and help
+* [BUG-#5] 'Is possible to answer secret questions twice'
+* Solves a bug with login script and cookie params
+* All code has been PSR-2 code standard compliant
+* Created more templates for pages
+* Created classes for Session, DB and Bootstrap management
+
+Version 2.9
+-----------
+* Remove level and badges from sources (cleaning up)
+* [#246] Adds a DAL Class in order to write less code messing with DB
+* Put user's answers when view a answered question
+* Change the way an user view its answered question
+* Add how many achieves needs to gain a badge when viewing profile
+* [#251] Bug solved: 'Avoid to send empty answers!'
+* Move source code from GitLab to GitHub: https://github.com/pacoorozco/gamify
+* Change LICENSE from CC to GPL v2
+* Reorder project directories
+
+Version 2.8
+-----------
+* Add 'public link' column on quiz management
+* Use of jQuery DataTables on large tables
+* Modify QuestionsManagement, UserManagement, LevelManagement to add more info
+* Update VIEW vmembers, include UUID, remove password
+* Remove VIEW vtop_week
+* Modify members profiles call to use UUID instead of Id
+* Add a new column to members_questions to keep answered choices
+* Mode level images to upload dir
+* Solves some bugs
+
+Version 2.7
+-----------
+* Allow users to change its profile image, with file upload included
+* IMPORTANT!: We add a new column to members table to put profile image:
+    ALTER TABLE `members` ADD `profile_image` VARCHAR( 250 ) NULL
+* All JS is now managed by head.js. Trying to improve load times
+* Put some icons on administrator interface
+* Re-styled view profile page. Now it's awesome!
+* [#188] New feature: 'Crear un 'timeline' sobre l'activitat de GoW'
+* [#189] New feature: 'File upload'
+
+Version 2.6
+-----------
+* [#186] New feature: 'Permetre 'preview' de les preguntes'
+* [#198] New feature: 'Permetre enllaçar URL protegides'
+* [#200] Bug solved: 'Algunes preguntes donen punts negatius'
+* [#199] Bug solved: 'No es mostren els codis HTML de les preguntes'
+* [#197] Bug solved: 'Error al crear una pregunta'
+* [#196] Bug solved: 'Pantalla blanca al respondre una pregunta'
+
+Version 2.5
+-----------
+First version with CHANGELOG
